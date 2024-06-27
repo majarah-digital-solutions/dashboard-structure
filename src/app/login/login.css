@@ -1,0 +1,276 @@
+.loginPage {
+    height: 100vh;
+    background-image: url(/images/loginImg/background.webp);
+    background-size: cover;
+    position: relative;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .singupPage {
+      height: unset;
+    }
+  
+    #formContent {
+      width: unset !important;
+      max-width: unset !important;
+    }
+  }
+  .loginOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.322);
+    width: 100%;
+    height: 100%;
+  }
+  
+  .loginPage a {
+    color: #000;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  
+  .loginPage .formHead a {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 40px 8px 10px 8px;
+    color: #cccccc;
+    padding: 10px 2px;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+  }
+  
+  .signForm {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+  }
+  
+  #formContent {
+    border-radius: 10px;
+    background: #fff;
+    padding: 30px 0;
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+    box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+    text-align: center;
+    z-index: 99;
+  }
+  
+  #formContent img {
+    width: 150px;
+  }
+  
+  #formFooter {
+    background-color: #f6f6f6;
+    border-top: 1px solid #dce8f1;
+    padding: 25px;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  .loginPage input[type=button], .loginPage input[type=submit], .loginPage input[type=reset] {
+    background-color: #c63b4e;
+    border: none;
+    color: white;
+    padding: 15px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 13px;
+    box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4);
+    border-radius: 5px 5px 5px 5px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .loginPage input[type=button]:hover, .loginPage input[type=submit]:hover, .loginPage input[type=reset]:hover {
+    background-color: #c63b4e;
+  }
+  
+  .loginPage input[type=button]:active, .loginPage input[type=submit]:active, .loginPage input[type=reset]:active {
+    transform: scale(0.95);
+  }
+  
+  .loginPage input[type=text], .loginPage input[type=password] {
+    background-color: #f6f6f6;
+    border: none;
+    color: #0d0d0d;
+    padding: 15px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    width: 85%;
+    border: 2px solid #f6f6f6;
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px;
+  }
+  
+  .loginPage input[type=text]:focus {
+    background-color: #fff;
+    border-bottom: 2px solid #c63b4e;
+  }
+  
+  .loginPage input[type=text]:placeholder {
+    color: #cccccc;
+  }
+  
+  @-webkit-keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @-moz-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .fadeIn {
+    opacity: 0;
+    -webkit-animation: fadeIn ease-in 1;
+    -moz-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
+  }
+  
+  .fadeIn.first {
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+  }
+  
+  .fadeIn.second {
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+  }
+  
+  .fadeIn.third {
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+  }
+  
+  .fadeIn.fourth {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+  }
+  
+  .loginPage .underlineHover:after {
+    display: block;
+    right: 0;
+    bottom: -9px;
+    width: 0;
+    height: 2px;
+    background-color: #c63b4e;
+    content: "";
+    transition: width 0.2s;
+    position: absolute;
+  }
+  
+  .loginPage .underlineHover:hover {
+    color: #0d0d0d;
+  }
+  
+  .loginPage .underlineHover:hover:after {
+    width: 100%;
+  }
+  
+  .loginPage .agrees {
+    direction: rtl;
+  }
+  
+  .loginPage .mode {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .loginPage .mode input {
+    display: none;
+  }
+  
+  .loginPage .mode .modeContent {
+    border: 1px solid #c63b4e;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .loginPage .modeContent:hover {
+    box-shadow: 0 8px 25px -8px #c63b4e;
+  }
+  
+  .loginPage .mode .modeActive {
+    background-color: #c63b4e;
+    color: #fff;
+  }
+  
+  .singupPage .formHead a {
+    margin: 20px 8px 10px 8px;
+  }
+  .statisticsIcon {
+    height: auto;
+    width: 50px;
+    padding: 3px;
+  }
